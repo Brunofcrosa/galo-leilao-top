@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🐓 Galo Leilão Top
 
-**URL**: https://lovable.dev/projects/b0a37ac7-ae2f-4401-afe4-0f980c7fa5b4
+**Plataforma de leilões online — rápida, responsiva e moderna.**
 
-## How can I edit this code?
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-There are several ways of editing your application.
+</div>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b0a37ac7-ae2f-4401-afe4-0f980c7fa5b4) and start prompting.
+## 📋 Sobre o Projeto
 
-Changes made via Lovable will be committed automatically to this repo.
+O **Galo Leilão Top** é uma plataforma web de leilões desenvolvida com as tecnologias mais modernas do ecossistema React. A aplicação oferece uma experiência fluida e acessível tanto para compradores quanto para vendedores, com interface 100% responsiva e componentes acessíveis via Radix UI.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Stack Tecnológica
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Camada | Tecnologia |
+|---|---|
+| Framework UI | React 18 + TypeScript |
+| Build Tool | Vite 5 |
+| Estilização | TailwindCSS 3 + shadcn/ui |
+| Componentes | Radix UI |
+| Roteamento | React Router DOM v6 |
+| Gerenciamento de Estado | TanStack Query v5 |
+| Formulários | React Hook Form + Zod |
+| Gráficos | Recharts |
+| Datas | date-fns |
+| Notificações | Sonner |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Estrutura do Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+galo-leilao-top/
+├── public/                 # Assets estáticos
+├── src/
+│   ├── components/         # Componentes reutilizáveis (shadcn/ui)
+│   ├── pages/              # Páginas da aplicação
+│   ├── hooks/              # Custom hooks
+│   ├── lib/                # Utilitários e configurações
+│   └── main.tsx            # Entry point
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## ⚙️ Pré-requisitos
+
+- Node.js `>= 18.x`
+- npm ou bun
+
+---
+
+## 🏃 Rodando Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/Brunofcrosa/galo-leilao-top.git
+cd galo-leilao-top
+
+# Instale as dependências
+npm install
+# ou com bun
+bun install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse [http://localhost:5173](http://localhost:5173)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📦 Scripts Disponíveis
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Build de produção |
+| `npm run build:dev` | Build em modo desenvolvimento |
+| `npm run preview` | Preview do build |
+| `npm run lint` | Análise estática com ESLint |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ✨ Funcionalidades
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- 🔨 Criação e gerenciamento de leilões
+- 💰 Sistema de lances em tempo real
+- 📊 Dashboard com gráficos e métricas (Recharts)
+- 🔔 Notificações de lances e encerramento
+- 📅 Controle de tempo por leilão (date-fns)
+- 📱 Interface 100% responsiva
+- ♿ Acessibilidade via Radix UI
+- 🌗 Suporte a tema claro/escuro (next-themes)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/b0a37ac7-ae2f-4401-afe4-0f980c7fa5b4) and click on Share -> Publish.
+## 🤝 Contribuindo
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+# Crie uma branch para sua feature
+git checkout -b feature/minha-feature
 
-Yes, you can!
+# Commit seguindo Conventional Commits
+git commit -m "feat: descrição da feature"
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Abra um Pull Request
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 👤 Autor
+
+**Bruno Fetzer** — Desenvolvedor Full Stack
+
+[![GitHub](https://img.shields.io/badge/GitHub-Brunofcrosa-181717?logo=github)](https://github.com/Brunofcrosa)
